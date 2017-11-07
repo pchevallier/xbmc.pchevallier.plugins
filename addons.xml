@@ -192,7 +192,7 @@
 
 <addon id="service.pchevallier.manager"
        name="Service Manager for pchevallier"
-       version="0.0.26"
+       version="0.0.27"
        provider-name="pchevallier">
   <requires>
     <import addon="xbmc.python" version="2.7.0"/>
