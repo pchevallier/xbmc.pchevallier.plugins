@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.vstream"
-        name="vStream Repository"
-        version="0.0.2"
-        provider-name="Venom">
-    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
-        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
-        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
-        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">vStream Repository</summary>
-        <description lang="fr">Installer vStream</description>
-        <summary lang="en">vStream Repository</summary>
-        <description lang="en">Download and install vStream</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.video.FranceTVPluzz"
-       name="FranceTV Pluzz"
-       version="1.1.4"
-       provider-name="JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>FranceTV Pluzz</summary>
-    <summary lang="fr">FranceTV Pluzz</summary>
-    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
-    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
-  </extension>
-</addon>
-
 <addon id="plugin.audio.ici" name="ICI Radio" version="1.1.0" provider-name="Philippe Chevallier">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
@@ -60,59 +19,6 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon>
-
-<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
-	<extension point="xbmc.addon.repository" name="Exodus repository">
-		<dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
-		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Exodus repository</summary>
-		<description lang="en">Exodus repository</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.freplay"
-       name="[COLOR blue]FR[/COLOR]epl[COLOR red]ay[/COLOR]"
-       version="0.6.16"
-       provider-name="SPM, JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    <import addon="script.module.parsedom" version="0.9.1"/>
-    <import addon="script.module.requests" version="1.1.0"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.youtube.dl" version="16.327.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
-    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
-    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
-    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
-    </description>
-    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
-    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
-    </description>
-    <email>kodi.freplay@gmail.com</email>
-    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
-    <language>fr</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <source>https://github.com/spmjc/plugin.video.freplay</source>
-    <disclaimer></disclaimer>
-    <website></website>
-  </extension>
 </addon>
 
 <addon id="plugin.video.arteplussept" name="Arte +7" version="1.0.1" provider-name="bmf">
@@ -162,91 +68,6 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
         - support for new arte api
         </news>
     </extension>
-</addon>
-
-<addons>
-<addon id="plugin.video.vstream" name="vStream" version="0.5.7" provider-name="Venom,TmpName">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-        <import addon="script.common.plugin.cache" version="0.9.1"/>
-        <import addon="plugin.video.youtube" version="2.9.2"/>
-        <import addon="script.module.simplejson" version="2.0.10"/>
-        <import addon="script.module.urlresolver" optional="true"/>
-        <import addon="repository.vstream" version="0.0.2"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">vStream</summary>
-        <description lang="fr">vStream est un module de streaming français, trouvez tous vos films, séries et mangas.[CR][CR]Contributeur: Johngf, Razorex, Kodigoal, Chataigne73, Arias800</description>
-        <summary lang="en">vStream</summary>
-        <description lang="en">vStream module and a french streaming, find all your movies, TV shows and mangas.[CR][CR]Contributeur: Johngf, Razorex, Kodigoal, Chataigne73, Arias800</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.vstream"
-        name="vStream Repository"
-        version="0.0.2"
-        provider-name="Venom">
-    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
-        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
-        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
-        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">vStream Repository</summary>
-        <description lang="fr">Installer vStream</description>
-        <summary lang="en">vStream Repository</summary>
-        <description lang="en">Download and install vStream</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon
-	id="skin.osmc"
-	version="17.0.3"
-	name="OSMC Skin"
-	provider-name="OSMC">
-	<requires>
-		<import addon="xbmc.gui" version="5.12.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">The default skin for OSMC</summary>
-		<description lang="en">Original design: Bolteh[CR]Original Kodi skin: Hitcher</description>
-		<news>Fix crash in PVR guide window; Font updates</news>
-	</extension>
-	<assets>
-		<icon>icon.png</icon>
-		<fanart>extras/backgrounds/Default.png</fanart>
-	</assets>
-</addon>
-</addons>
-
-<addon id="plugin.video.lynda" name="Lynda.com" version="2.0.0" provider-name="David Moodie">
-  <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Watch Lynda.com courses</summary>
-		<description lang="en">Allows you to watch courses provided by Lynda.com</description>
-		<license>GNU General Public License, v2</license>
-		<language>en</language>
-		<source>https://github.com/davejm/plugin.video.lynda</source>
-		<website>http://www.davidmoodie.com</website>
-		<disclaimer lang="en">All video content streamed by this addon belongs to Lynda.com and an account is required to view premium content.</disclaimer>
-	</extension>
 </addon>
 
 <addon id="plugin.video.ccloudtv"
@@ -324,23 +145,183 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
 	</extension>
 </addon>
 
-<addon id="service.vpn.manager"
-       name="VPN Manager for OpenVPN"
-       version="5.0.2"
-       provider-name="Zomboided">
+<addon id="plugin.video.FranceTVPluzz"
+       name="FranceTV Pluzz"
+       version="1.1.4"
+       provider-name="JUL1EN094">
   <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.requests"/>
   </requires>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.python.module" library="libs" />
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
-    <description lang="en">Establish a connection to the VPN service and automatically switch VPN locations based on the add-on being used.</description>
+    <summary>FranceTV Pluzz</summary>
+    <summary lang="fr">FranceTV Pluzz</summary>
+    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
+    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
   </extension>
+</addon>
+
+<addon id="plugin.video.freplay"
+       name="[COLOR blue]FR[/COLOR]epl[COLOR red]ay[/COLOR]"
+       version="0.6.16"
+       provider-name="SPM, JUL1EN094">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.parsedom" version="0.9.1"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.youtube.dl" version="16.327.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
+    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
+    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
+    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
+    </description>
+    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
+    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
+    </description>
+    <email>kodi.freplay@gmail.com</email>
+    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
+    <language>fr</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/spmjc/plugin.video.freplay</source>
+    <disclaimer></disclaimer>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.lynda" name="Lynda.com" version="2.0.0" provider-name="David Moodie">
+  <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Watch Lynda.com courses</summary>
+		<description lang="en">Allows you to watch courses provided by Lynda.com</description>
+		<license>GNU General Public License, v2</license>
+		<language>en</language>
+		<source>https://github.com/davejm/plugin.video.lynda</source>
+		<website>http://www.davidmoodie.com</website>
+		<disclaimer lang="en">All video content streamed by this addon belongs to Lynda.com and an account is required to view premium content.</disclaimer>
+	</extension>
+</addon>
+
+<addons>
+<addon id="plugin.video.vstream" name="vStream" version="0.5.7" provider-name="Venom,TmpName">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.common.plugin.cache" version="0.9.1"/>
+        <import addon="plugin.video.youtube" version="2.9.2"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.module.urlresolver" optional="true"/>
+        <import addon="repository.vstream" version="0.0.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream</summary>
+        <description lang="fr">vStream est un module de streaming français, trouvez tous vos films, séries et mangas.[CR][CR]Contributeur: Johngf, Razorex, Kodigoal, Chataigne73, Arias800</description>
+        <summary lang="en">vStream</summary>
+        <description lang="en">vStream module and a french streaming, find all your movies, TV shows and mangas.[CR][CR]Contributeur: Johngf, Razorex, Kodigoal, Chataigne73, Arias800</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.vstream"
+        name="vStream Repository"
+        version="0.0.2"
+        provider-name="Venom">
+    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
+        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
+        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream Repository</summary>
+        <description lang="fr">Installer vStream</description>
+        <summary lang="en">vStream Repository</summary>
+        <description lang="en">Download and install vStream</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon
+	id="skin.osmc"
+	version="17.0.3"
+	name="OSMC Skin"
+	provider-name="OSMC">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">The default skin for OSMC</summary>
+		<description lang="en">Original design: Bolteh[CR]Original Kodi skin: Hitcher</description>
+		<news>Fix crash in PVR guide window; Font updates</news>
+	</extension>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>extras/backgrounds/Default.png</fanart>
+	</assets>
+</addon>
+</addons>
+
+<addon id="repository.exodus" version="1.0.1" name="Exodus repository" provider-name="Exodus">
+	<extension point="xbmc.addon.repository" name="Exodus repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://offshoregit.com/exodus/addons.xml</info>
+		<checksum>https://offshoregit.com/exodus/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/exodus/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus repository</summary>
+		<description lang="en">Exodus repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.vstream"
+        name="vStream Repository"
+        version="0.0.2"
+        provider-name="Venom">
+    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
+        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
+        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream Repository</summary>
+        <description lang="fr">Installer vStream</description>
+        <summary lang="en">vStream Repository</summary>
+        <description lang="en">Download and install vStream</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="service.pchevallier.manager"
@@ -359,6 +340,25 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
     <platform>all</platform>
     <summary lang="en">This is a test addon</summary>
     <description lang="en">This is the description</description>
+  </extension>
+</addon>
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="5.0.4"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to the VPN service and automatically switch VPN locations based on the add-on being used.</description>
   </extension>
 </addon>
 </addons>
