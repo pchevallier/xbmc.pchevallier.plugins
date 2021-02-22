@@ -107,11 +107,11 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.arteplussept" name="Arte +7" version="1.0.2" provider-name="bmf">
+<addon id="plugin.video.arteplussept" name="Arte +7" version="1.1.0" provider-name="bmf">
     <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.xbmcswift2" version="2.4.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.xbmcswift2" version="19.0.4"/>
+        <import addon="script.module.requests" version="2.22.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
         <provides>video</provides>
@@ -119,7 +119,7 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en">Arte +7</summary>
-        <language>fr de en</language>
+        <language>fr de en it</language>
         <description lang="fr">
 Regardez les vidéos de Arte +7
 Pour toute demande ou reporter un problème:
@@ -141,12 +141,22 @@ https://github.com/known-as-bmf/plugin.video.arteplussept/issues
 Contributions are welcome:
 https://github.com/known-as-bmf/plugin.video.arteplussept
         </description>
+        <description lang="it">
+Guarda video da Arte +7
+Per richiedere nuove funzionalità o segnalare problemi:
+https://github.com/known-as-bmf/plugin.video.arteplussept/issues
+Nuovi contributi sono ben accetti:
+https://github.com/known-as-bmf/plugin.video.arteplussept
+        </description>
         <license>MIT</license>
         <source>https://github.com/known-as-bmf/plugin.video.arteplussept.git</source>
         <!--<forum></forum>
         <email></email>-->
         <website>http://www.arte.tv</website>
         <news>
+        v1.1.0
+        - API fixes
+        - Added add-on option to select video stream (language, subtitles...)
         v1.0.2
         - weekly browse
         - bugfix (settings parsing #54)
