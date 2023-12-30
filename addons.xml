@@ -1,112 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.FranceTVPluzz"
-       name="FranceTV Pluzz"
-       version="1.1.4"
-       provider-name="JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>FranceTV Pluzz</summary>
-    <summary lang="fr">FranceTV Pluzz</summary>
-    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
-    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
-  </extension>
-</addon>
-
-<addon id="plugin.audio.ici" name="ICI Radio" version="1.1.0" provider-name="Philippe Chevallier">
-    <requires>
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="script.module.pyxbmct" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">ICI Radio streams</summary>
-        <license>GNU General Public License, v2</license>
-        <description lang="en">ICI Radio from cities across Canada</description>
-        <platform>all</platform>
-        <source>https://github.com/pchevallier/plugin.audio.ici</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.francetv" name="france.tv" version="1.0.0" provider-name="melmorabity">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.dateutil" version="2.5.3"/>
-    <import addon="script.module.requests" version="2.18.4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">france.tv</summary>
-    <summary lang="fr_FR">france.tv</summary>
-    <description lang="en_GB">Live and catchup TV for France Télévisions channels</description>
-    <description lang="fr_FR">Direct et replay TV des chaînes France Télévisions</description>
-    <disclaimer lang="en_GB">Some streams may be georestricted to France</disclaimer>
-    <disclaimer lang="fr_FR">Certains contenus ne sont disponibles que depuis la France</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://www.france.tv/</website>
-    <source>http://github.com/melmorabity/plugin.video.francetv/</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-    <news>v1.0.0 (2018-04-14)
-    - Initial version</news>
-  </extension>
-</addon>
-
-<addon id="plugin.video.freplay"
-       name="[COLOR blue]FR[/COLOR]epl[COLOR red]ay[/COLOR]"
-       version="0.6.16"
-       provider-name="SPM, JUL1EN094">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    <import addon="script.module.parsedom" version="0.9.1"/>
-    <import addon="script.module.requests" version="1.1.0"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.youtube.dl" version="16.327.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
-    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
-    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
-    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
-    </description>
-    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
-    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
-    </description>
-    <email>kodi.freplay@gmail.com</email>
-    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
-    <language>fr</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <source>https://github.com/spmjc/plugin.video.freplay</source>
-    <disclaimer></disclaimer>
-    <website></website>
-  </extension>
-</addon>
-
 <addon id="plugin.video.arteplussept" name="Arte +7" version="1.1.0" provider-name="bmf">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -169,7 +62,7 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
     </extension>
 </addon>
 
-<addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.35" provider-name="SylvainCecchetto,wwark">
+<addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.36" provider-name="SylvainCecchetto,wwark">
   <requires>
     <!-- xbmc.python -->
     <import addon="script.module.codequick" version="0.9.13"/>
@@ -212,11 +105,24 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
     <news>
-[Version 0.2.35]
-[Live TV] - Fix addon TV guide on Kodi 17 and 18
-[France Info - FR] Fix Live TV
-[Sport en France - FR] Fix Live TV
-[France TV - FR] Fix Catchup TV
+[Version 0.2.36]
+[6Play - FR] Fix Catchup TV
+[STV - UK] Fix missing content (#512)
+[STV - UK] Add subtitle (#513)
+[Website - NFB] Fix videos (#498)
+[France TV sport] Fix lives (#525) (thanks @chamchenko)
+[FR - LCI] Fix missing programs (#450)
+[IT - MediaSet] Add lives TV (#534) (thanks @Bas)
+[IT - MediaSet] Add lives TV (#534) (thanks @Bas)
+[NL - OB] added omroep brabant live (#534) (thanks @Bas)
+[CA - IciTele] Add more Lives TV (#528) (thanks @Sphinxroot)
+[BE - RTLPlay] Add more Catch-Up TV (#528) (thanks @darodi)
+[FR - MyTFI] Fix missing next page button (#535)
+[WO - Arte Live] Fix 404 error (#546)
+[FR - FranceTV] Fix replay (#540) (thanks @0xced and @pipoprods)
+[WO - TV5Monde] Fix replay (#530)
+[WO - Arte Live] Fix bad resolution (#552)
+[FR - France TV] Fix live (#558 and #560) (thanks @Arias800)
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
@@ -229,179 +135,6 @@ Visit WebSite - http://mpdb.tv/#home which host the french forum used by users o
       <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.lynda" name="Lynda.com" version="2.0.0" provider-name="David Moodie">
-  <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Watch Lynda.com courses</summary>
-		<description lang="en">Allows you to watch courses provided by Lynda.com</description>
-		<license>GNU General Public License, v2</license>
-		<language>en</language>
-		<source>https://github.com/davejm/plugin.video.lynda</source>
-		<website>http://www.davidmoodie.com</website>
-		<disclaimer lang="en">All video content streamed by this addon belongs to Lynda.com and an account is required to view premium content.</disclaimer>
-	</extension>
-</addon>
-
-<addon id="service.vpn.manager"
-       name="VPN Manager for OpenVPN"
-       version="6.4.3"
-       provider-name="Zomboided">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.python.module" library="libs" />
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news></news>
-    <platform>all</platform>
-    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
-    <description lang="en">Establish a connection to a VPN service and automatically switch VPN locations based on the add-on being used.</description>
-    <license>GPL-2.0-or-later</license>
-    <forum>https://forum.libreelec.tv/thread/5032-vpn-manager-for-openvpn/</forum>
-    <source>https://github.com/Zomboided/service.vpn.manager</source>
-    <assets>
-        <icon>resources/icon.png</icon>
-        <fanart></fanart>
-        <banner></banner>
-        <clearlogo></clearlogo>
-        <screenshot></screenshot>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="service.pchevallier.manager"
-       name="Service Manager for pchevallier"
-       version="0.0.27"
-       provider-name="pchevallier">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.python.module" library="libs" />
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">This is a test addon</summary>
-    <description lang="en">This is the description</description>
-  </extension>
-</addon>
-
-<addon id="plugin.video.netflix" name="Netflix" version="1.11.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
-  <requires>
-    <import addon="xbmc.python" version="2.26.0"/>
-    <import addon="script.module.addon.signals" version="0.0.3"/>
-    <import addon="script.module.future" version="0.17.1"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-    <import addon="script.module.pycryptodome" version="3.4.3"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py"/>
-  <extension point="xbmc.python.module" library="packages/mysql-connector-python"/>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="cs_CZ">Netflix</summary>
-    <description lang="cs_CZ">Plugin pro sledování filmů, seriálů online z Netflixu</description>
-    <disclaimer lang="cs_CZ">Použití tohoto doplňku nemusí být ve vaší zemi pobytu legální - před instalací dbejte na vaše zákony.</disclaimer>
-    <summary lang="de_DE">Netflix</summary>
-    <description lang="de_DE">Addon für Netflix VOD-Dienste</description>
-    <disclaimer lang="de_DE">Möglicherweise ist die Verwendung dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
-    <summary lang="en_GB">Netflix</summary>
-    <description lang="en_GB">Netflix VOD Services Add-on</description>
-    <disclaimer lang="en_GB">The use of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-    <summary lang="el_GR">Νέτφλιξ</summary>
-    <description lang="el_GR">Πρόσθετο υπηρεσιών κατά παραγγελία του Νέτφλιξ</description>
-    <disclaimer lang="el_GR">Η χρήση αυτού του προσθέτου μπορεί να μην είναι νόμιμη στην χώρα που κατοικείτε - παρακαλώ ελέγξτε τους τοπικούς νόμους πριν την εγκατάσταση.</disclaimer>
-    <summary lang="nl_NL">Netflix</summary>
-    <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
-    <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
-    <summary lang="ja_JP">Netflix</summary>
-    <description lang="ja_JP">Netflix VOD サービスアドオン</description>
-    <disclaimer lang="ja_JP">一部の国では、このアドオンを使用するのが不法でありますので、設置する前に必ず関連法律を確認してください</disclaimer>
-    <summary lang="ko_KR">Netflix</summary>
-    <description lang="ko_KR">Netflix VOD 서비스애드온</description>
-    <disclaimer lang="ko_KR">일부 국가에서는 이 애드온을 사용하는 것이 불법일 수도 있으니, 설치하기전 관련 법을 확인하기 바랍니다.</disclaimer>
-    <description lang="it_IT">Netflix Add-on servizi VOD</description>
-    <disclaimer lang="it_IT">L'utilizzo di questo add-on potrebbe non essere legale nel vostro paese di residenza - si prega di verificare le leggi in vigore prima dell'installazione.</disclaimer>
-    <summary lang="es_ES">Netflix</summary>
-    <description lang="es_ES">Complemento para los Servicios VOD de Netflix</description>
-    <disclaimer lang="es_ES">El uso de este complemento puede no ser legal en su país de residencia - Por favor, consulte las leyes locales antes de instalarlo.</disclaimer>
-    <summary lang="hu_HU">Netflix</summary>
-    <description lang="hu_HU">Netflix VOD kiegészítő a Kodihoz</description>
-    <disclaimer lang="hu_HU">Előfordulhat, hogy a kiegészítő használata nem törvényes az Ön országában - telepítés előtt tájékozódjon a helyi törvényekről</disclaimer>
-    <summary lang="pt_BR">Netflix</summary>
-    <description lang="pt_BR">Add-on para os serviços VOD do Netflix</description>
-    <disclaimer lang="pt_BR">O uso deste addon pode não ser legal no seu país de residência - por favor, verifique as suas leis locais antes de instalar.</disclaimer>
-    <summary lang="tr_TR">Netflix</summary>
-    <description lang="tr_TR">Netflix VOD Hizmetleri Eklentisi</description>
-    <disclaimer lang="tr_TR">Bu eklentinin bazı bölümleri ikamet ettiğiniz ülkede yasal olmayabilir - lütfen yüklemeden önce yerel yasalarınıza bakın.</disclaimer>
-    <summary lang="ro_RO">Netflix</summary>
-    <description lang="ro_RO">Add-on pentru servicii video la cerere Netflix</description>
-    <disclaimer lang="ro_RO">Utilizarea acestui add-on ar putea fi ilegală în țara în care locuiți - vă rugăm să verificați legile locale înainte de instalare.</disclaimer>
-    <summary lang="sv_SE">Netflix</summary>
-    <description lang="sv_SE">Netflix VOD Service-tillägg</description>
-    <disclaimer lang="sv_SE">Användandet av detta tillägg kanske inte är lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
-    <summary lang="zh_CN">Netflix</summary>
-    <description lang="zh_CN">Netflix VOD服务附加组件</description>
-    <disclaimer lang="zh_CN">此附加组件在您的居住国可能不合法-请在安装前与您当地的法律核对。</disclaimer>
-    <summary lang="fr_FR">Netflix</summary>
-    <description lang="fr_FR">Extension Netflix SVoD</description>
-    <disclaimer lang="fr_FR">L'utilisation de cette extension n'est peut-être pas légale dans votre pays de résidence - renseignez-vous avant de l'installer</disclaimer>
-    <summary lang="pl_PL">Netflix</summary>
-    <description lang="pl_PL">Wtyczka dla usług VOD serwisu Netflix</description>
-    <disclaimer lang="pl_PL">Korzystanie z tego dodatku może być niezgodne z prawem w twoim kraju zamieszkania - przed zainstalowaniem zapoznaj się z lokalnymi przepisami.</disclaimer>
-    <summary lang="he_IL">Netflix</summary>
-    <description lang="he_IL">תוסף VOD לשירות של Netflix</description>
-    <disclaimer lang="he_IL">השימוש בתוסף זה עלול להיות לא חוקי במדינת מגוריך - אנא בדוק את החוק ברשות המקומית לפני ההתקנה</disclaimer>
-	<assets>
-      <icon>resources/media/icon.png</icon>
-      <fanart>resources/media/fanart.jpg</fanart>
-      <screenshot>resources/media/screenshot-01.jpg</screenshot>
-      <screenshot>resources/media/screenshot-02.jpg</screenshot>
-      <screenshot>resources/media/screenshot-03.jpg</screenshot>
-      <screenshot>resources/media/screenshot-04.jpg</screenshot>
-      <screenshot>resources/media/screenshot-05.jpg</screenshot>
-    </assets>
-    <language>en cs de es fr he hr hu it ja ko nl pl pt ro sv tr zh</language>
-    <platform>all</platform>
-    <license>MIT</license>
-    <website>https://www.netflix.com</website>
-    <email></email>
-    <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
-    <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
-    <news>
-v1.11.0 (2020-11-14)
-- Reworked Audio/Subtitles language features
-  - Add support to Kodi player audio setting "Media default" (use NF profile language)
-  - Add setting to force the display subtitles only with the audio language set
-  - Add setting to always show subtitles when the preferred audio language is not available (Kodi 19 only)
-  - Add setting to prefer audio/subtitles with country code (Kodi 19 only)
-  - Add setting to prefer stereo audio tracks (instead of multichannels)
-- Add check for video availability
-- Add support to NFAuthentication for MacOS
-- Add workaround to HTTP connection problem blocking the add-on service
-- Fixed wrong resume time after manual seek (when nf sync enabled)
-- Fixed login/addon open error due to json parsing error
-- Updated translations it, jp, kr, tr, gr, ro, fr, hu, pl, de, zh-cn, pt-br
-- Others minor fixes
-    </news>
   </extension>
 </addon>
 </addons>
