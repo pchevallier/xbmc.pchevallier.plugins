@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.example" name="Example Kodi Video Plugin" version="0.0.1" provider-name="Roman_V_M">
+<addon id="plugin.video.example"
+version="3.0.1"
+name="Example Kodi Video Plugin"
+provider-name="Roman_V_M">
 <requires>
   <import addon="xbmc.python" version="3.0.1"/>
 </requires>
